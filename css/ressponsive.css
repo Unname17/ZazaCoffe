@@ -1,0 +1,76 @@
+/* Media Queries */
+
+/* Laptop */
+@media (max-width: 1024px) {
+  html {
+    font-size: 75%;
+  }
+}
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 60.5%;
+  }
+  .navbar-ekstra #menu {
+    display: inline-block;
+  }
+
+  nav .navbar-navigation {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: white;
+    width: 30rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  nav div .navbar-navigation.active {
+    right: 0;
+  }
+
+  nav div .navbar-navigation a {
+    color: var(--Hitam);
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  nav div .navbar-navigation a::after {
+    transform-origin: 0 0;
+  }
+
+  nav div .navbar-navigation a:hover ::after {
+    transform: scaleX(0.2);
+  }
+}
+
+/* Mobile */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+  .pbs .img,
+  .pbs .lemontea {
+    margin: 0 auto;
+  }
+  .img img {
+    width: 45rem;
+  }
+  .lemontea {
+    text-align: center;
+  }
+  .link {
+    padding: 4rem;
+  }
+  .footer-kr {
+    width: calc(auto * 40%);
+  }
+  .footer-tgh {
+    width: calc(auto * 40%);
+  }
+  .footer-kn {
+    width: calc(auto * 40%);
+  }
+}
